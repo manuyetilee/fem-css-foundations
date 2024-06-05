@@ -1,0 +1,54 @@
+/*STYLE VARIABLES*/
+:root {
+  --color-primary: #ff7b54;
+  --color-text-on-primary: #fff;
+  --font-family: "Inter", sans-serif;
+}
+
+/*COMMONS STYLES*/
+body {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  font-family: var(--font-family);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*HEADER*/
+.header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 34px;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo nav shopping-cart";
+  align-items: center;
+
+  padding: 0 60px;
+}
+
+.header__link {
+  font-size: 40px;
+  font-weight: bold;
+  grid-area: logo;
+}
+
+.header__shopping-cart {
+  grid-area: shopping-cart;
+}
+
+.nav {
+  display: inline-block;
+  justify-self: end;
+  grid-area: nav;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.nav__list-item {
+  margin-inline-end: 36px; /*same as margin-right but takes in consideration the text directionality and orientation such as in arabic*/
+  font-size: 20px;
+}
