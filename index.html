@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Day</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&&display=swap" rel="stylesheet">
@@ -26,10 +26,14 @@
         </nav>
         <img class="header__shopping-cart" src="./icons/shopping-cart.svg" alt="Shopping cart">
     </header>
-    <main>
-        <p>CSS Day is a conference for developers who love beautiful websites.</p>
-        <p>4-8 June 2023</p>
-        <button>Buy Tickets <img src="./icons/arrow-right.svg" alt="Right arrow"></button>
+    <main class="main">
+        <h1 class="main__header">CSS Day is a conference for developers who love beautiful websites.</h1>
+        <h4 class="main__sub-header">4-8 June 2023</h4>
+        <div class="button-container">
+            <button class="button button--primary">Buy Tickets <img class="button__icon" src="./icons/arrow-right.svg"
+                    alt="Right arrow"></button>
+            <button class="button button--secondary">Contact Us</button>
+        </div>
     </main>
 </body>
 
