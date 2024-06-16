@@ -1,7 +1,8 @@
 /*STYLE VARIABLES*/
 :root {
   --color-primary: #ff7b54;
-  --color-text-on-primary: #fff;
+  --color-text-on-primary: white;
+  --color-text-on-secondary: black;
   --color-button-border: var(--color-text-on-primary);
 
   --color-button-primary-bg: var(--color-text-on-primary);
@@ -12,11 +13,18 @@
 }
 
 /*COMMONS STYLES*/
-body {
-  background-color: var(--color-primary);
-  color: var(--color-text-on-primary);
+.body {
   font-family: var(--font-family);
 }
+.body--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+.body--secondary {
+  background-color: var(--color-text-on-primary);
+  color: var(--color-primary);
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -100,4 +108,34 @@ h6 {
 }
 .button__icon {
   vertical-align: middle;
+}
+
+@media (width < 1200px) {
+  .button--primary,
+  .button--secondary {
+    font-size: 24px;
+    padding: 0px 32px;
+    height: 70px;
+  }
+  .button img {
+    width: 20px;
+  }
+  .main {
+    padding: 56px;
+  }
+}
+@media (width < 600px) {
+  .button-container {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  .button:not(.button:last-of-type) {
+    margin-right: 0px;
+  }
+  .main {
+    padding: 16px;
+    padding-top: 56px;
+  }
 }
