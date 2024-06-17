@@ -54,6 +54,17 @@ h6 {
   font-weight: bold;
 }
 
+.header__hamburguer-icon {
+  width: 34px;
+  height: auto;
+  display: none;
+}
+.header__close-icon {
+  width: 27px;
+  height: auto;
+  display: none;
+}
+
 .nav {
   display: inline-block;
   justify-self: end;
@@ -122,6 +133,21 @@ h6 {
   }
   .main {
     padding: 56px;
+    padding-top: 100px;
+  }
+}
+@media (width < 900px) {
+  .header {
+    grid-template-columns: 34px 1fr 34px;
+  }
+  .header__link {
+    text-align: center;
+  }
+  .nav {
+    display: none;
+  }
+  .header__hamburguer-icon {
+    display: block;
   }
 }
 @media (width < 600px) {
