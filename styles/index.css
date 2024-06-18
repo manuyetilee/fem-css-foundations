@@ -1,5 +1,8 @@
 @import "./base.css";
-
+@import "./injected-classes.css";
+.nav {
+  background-color: var(--color-primary);
+}
 .home.main__header {
   font-size: 128px;
   font-weight: bold;

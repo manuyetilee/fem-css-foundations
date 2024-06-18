@@ -53,7 +53,12 @@ h6 {
   font-size: 40px;
   font-weight: bold;
 }
-
+.header__menu-btn {
+  display: none;
+}
+.header__menu-btn:hover {
+  cursor: pointer;
+}
 .header__hamburguer-icon {
   width: 34px;
   height: auto;
@@ -144,8 +149,22 @@ h6 {
     text-align: center;
   }
   .nav {
-    display: none;
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    left: -100vw;
+    top: 60px;
   }
+  .nav__list {
+    flex-direction: column;
+  }
+  .nav__list-item {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .header__menu-btn,
   .header__hamburguer-icon {
     display: block;
   }

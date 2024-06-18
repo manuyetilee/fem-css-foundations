@@ -1,8 +1,12 @@
 @import "./base.css";
-
+@import "./injected-classes.css";
 /* .header__shopping-cart-icon g path {
   fill: var(--color-primary);
 } */
+.nav {
+  background-color: var(--color-text-on-primary);
+}
+
 .speakers__wrapper {
   display: flex;
   flex-wrap: wrap;
